@@ -1,0 +1,62 @@
+/* 
+---01 TYPOGRAPHY System
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+---02 SPACING SYSTEM
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+---03 Line height
+paragraph:1.6
+
+---0 letter-spacing
+
+big:-1.35px
+
+
+---04 shadow
+
+---05 color
+text-color
+default:#333
+
+defualt color:#e67e22 
+tint:#f8d8bd,#fdf2e9
+shade:#5c320e
+
+
+---06 padding
+small-1.2rem 2.4rem;
+
+---07 margin
+
+---08 margin
+
+
+ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "rubik", sans-serif;
+  color: #333;
+}
+
+.container {
+  max-width: 120rem;
+  padding: 0 4.8rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-2cols {
+  grid-template-columns: 1fr 1fr;
+  column-gap: 4.8rem;
+}
