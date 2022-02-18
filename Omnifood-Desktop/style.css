@@ -342,3 +342,84 @@
 .diet-box li:not(:last-child) {
   margin-bottom: 2.4rem;
 }
+
+.meal-box {
+  margin-bottom: 3.2rem;
+}
+.recipe-link:link,
+.recipe-link:visited {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: #e67e22;
+  border-bottom: 1px solid currentColor;
+  display: inline-block;
+}
+.recipe-link:hover,
+.recipe-link:active {
+  border-bottom: 1px solid transparent;
+}
+
+/*--------- section-meals */
+.section-testimonial {
+  background-color: #fae5d3;
+}
+.testi-width {
+  grid-column: 1/-1;
+}
+
+.testimonial {
+  padding: 9.6rem 4.8rem;
+  grid-template-columns: 1.5fr 1fr !important;
+  row-gap: 0 !important;
+  align-items: center;
+}
+
+.customer-box {
+  background-color: #fdf2e985;
+  padding: 3.2rem 2.4rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.199);
+  border-radius: 9px;
+}
+
+.customer-box img {
+  border-radius: 50%;
+  margin-bottom: 2.4rem;
+  border: 3px solid #cf711f;
+}
+
+.tes-customer-text {
+  font-size: 2.4rem;
+  line-height: 1.3;
+  margin-bottom: 1.2rem;
+  font-weight: 500;
+}
+.customer-name {
+  font-size: 1.8rem;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 1.2rem;
+  justify-content: center;
+}
+.right {
+  justify-self: end;
+}
+.gallery-img-box {
+  max-width: 25rem;
+
+  height: 100%;
+  overflow: hidden;
+}
+.gallery-img-box img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s;
+}
+.gallery-img-box img:hover {
+  transform: scale(1.1);
+}
+.testimonial-explain {
+  font-size: 4.4rem;
+  margin-bottom: 3.2rem;
+}

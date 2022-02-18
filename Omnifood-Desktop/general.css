@@ -7,6 +7,7 @@ FONT SIZE SYSTEM (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 
 ---03 Line height
+small-1.3
 paragraph:1.5
 
 ---0 letter-spacing
@@ -74,7 +75,7 @@ html {
   text-transform: uppercase;
   color: #e67e22;
   font-weight: 600;
-  margin-bottom: 2rem;
+  margin-bottom: 1.2rem;
 }
 .heading-secondary {
   font-size: 4.4rem;
@@ -82,4 +83,7 @@ html {
 }
 .margin-bottom-b {
   margin-bottom: 9.6rem;
+}
+.margin-none {
+  margin-bottom: none !important;
 }
