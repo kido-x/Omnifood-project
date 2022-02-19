@@ -594,7 +594,7 @@
 
 /*--------- section-form */
 .section-form {
-  padding: 9.6rem 0;
+  padding: 9.6rem 0 12.8rem;
 }
 
 .form-box {
@@ -620,7 +620,7 @@
   grid-column: 1/-1;
 }
 .form-heading {
-  font-size: 4.8rem;
+  font-size: 4rem;
   color: #5c320e;
   margin-bottom: 2.4rem;
 }
@@ -693,4 +693,63 @@
 }
 .form-form {
   row-gap: 1.2rem !important;
+}
+
+/*--------- footer */
+footer {
+  border-top: 1px solid #ddd;
+}
+.footer {
+  padding: 9.6rem 4.8rem !important;
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr 2.5fr;
+}
+.company-social img {
+  display: inline-block;
+  margin-bottom: 1.2rem;
+}
+.company-social-icon ion-icon {
+  width: 3.2rem;
+  height: 3.2rem;
+  margin-right: 1.2rem;
+}
+.company-social-icon {
+  margin-bottom: 2.4rem;
+}
+.company-social-icon a {
+  color: #333;
+}
+.company-address address {
+  margin-bottom: 2.4rem;
+  font-size: 1.8rem;
+}
+.tel {
+  display: block;
+  margin-bottom: 1.2rem;
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: black;
+}
+.footer-nav-box {
+  display: grid;
+}
+.footer-nav ul {
+  list-style: none;
+}
+.footer-heading {
+  font-size: 1.8rem;
+  margin-bottom: 2.4rem;
+  font-weight: 500;
+}
+.footer-nav p {
+}
+.footer-nav ul li {
+  font-size: 1.6rem;
+  margin-bottom: 1.8rem;
+  color: #777;
+}
+.footer-nav ul li a {
+  text-decoration: none;
+  color: #777;
+  marbo
 }
