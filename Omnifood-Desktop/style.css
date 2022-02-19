@@ -588,4 +588,109 @@
 .feature-text {
   font-size: 1.8rem;
   margin-top: auto;
+  color: #777;
+  line-height: 1.5;
+}
+
+/*--------- section-form */
+.section-form {
+  padding: 9.6rem 0;
+}
+
+.form-box {
+  grid-template-columns: 1.5fr 1fr !important;
+  column-gap: 0 !important;
+  border-radius: 9px;
+  overflow: hidden;
+  background: linear-gradient(to right bottom, #e67d229d, #fd7600);
+}
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 4.8rem 4.8rem;
+  column-gap: 2.4rem;
+  row-gap: 2.4rem;
+}
+.form-img-box {
+  background-image: linear-gradient(#e67d2254, #e67d2254), url(img/eating.jpg);
+  background-size: cover;
+}
+
+.form-fw {
+  grid-column: 1/-1;
+}
+.form-heading {
+  font-size: 4.8rem;
+  color: #5c320e;
+  margin-bottom: 2.4rem;
+}
+.form-text {
+  font-size: 2rem;
+  line-height: 1.5;
+  margin-bottom: 3.2rem;
+  color: #733f11;
+  font-weight: 400;
+}
+.form-box label {
+  font-size: 2rem;
+
+  display: block;
+  font-weight: 500;
+  color: #2e1907;
+}
+.form-box input {
+  width: 100%;
+  padding: 1.2rem;
+  border-radius: 11px;
+  border: none;
+  margin-bottom: 2.4rem;
+  background-color: #f8d8bd;
+  font-size: 1.8rem;
+  font-family: inherit;
+  font-weight: 500;
+}
+.form-form input::placeholder {
+  font-family: inherit;
+  color: #777;
+  font-size: 1.8rem;
+}
+.form-box select {
+  width: 100%;
+  padding: 1.2rem;
+  border-radius: 9px;
+  background-color: #f8d8bd;
+  border: none;
+  color: #2e1907;
+  font-family: inherit;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.form-box option {
+  color: #5c320e;
+  padding: 1.2rem;
+}
+.form-btn {
+  align-self: end;
+  justify-self: start;
+  padding: 1.2rem;
+  border-radius: 9px;
+  border: none;
+  font-size: 2rem;
+  font-weight: 600;
+  width: 100%;
+  background-color: #5c320e;
+  color: #fdf2e9;
+  transition: all 0.3s;
+}
+.form-btn:hover {
+  background-color: #fd7600;
+  color: #fdf2e9;
+  box-shadow: 0 0 0 5px #fdf2e9;
+}
+.form *:focus {
+  outline: none;
+  box-shadow: 0 0 0 5px #f8d8bd69;
+}
+.form-form {
+  row-gap: 1.2rem !important;
 }
