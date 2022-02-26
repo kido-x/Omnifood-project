@@ -5,6 +5,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 2.4rem 4.8rem;
+  position: relative;
 }
 .logo {
   width: 20rem;
@@ -13,7 +14,6 @@
   display: flex;
   gap: 1.8rem;
   list-style: none;
-  margin-right: 2.4rem;
 }
 .navigation-list-box a:link,
 .navigation-list-box a:visited {
@@ -34,6 +34,21 @@
   color: #fdf2e9;
 }
 
+/* mobile nav */
+.mobile-nav {
+  border: none;
+  background: none;
+  display: none;
+  cursor: pointer;
+}
+.mobile-nav-icon {
+  width: 3.2rem;
+  height: 3.2rem;
+}
+.mobile-nav-icon {
+  display: none;
+}
+
 /*--------- section-hero */
 .section-hero {
   padding: 9.6rem;
@@ -52,7 +67,7 @@
 
 .hero-heading {
   font-size: 6.2rem;
-  margin-bottom: 6.4rem;
+  margin-bottom: 4.8rem;
   color: #2e1907;
   letter-spacing: -1.35px;
   line-height: 1;
@@ -61,7 +76,7 @@
 
 .hero-text {
   font-size: 2.4rem;
-  margin-bottom: 9.6rem;
+  margin-bottom: 6.4rem;
   line-height: 1.5;
 }
 
@@ -159,7 +174,7 @@
   font-weight: 600;
 }
 
-/*--------- section-hero */
+/*--------- section-featured-company */
 .section-featured-company {
   padding: 3.2rem 0;
 }
@@ -254,7 +269,8 @@
   padding: 9.6rem 0;
   text-align: center;
 }
-.meal {
+.meal1,
+.meal2 {
   background-color: rgb(255, 255, 255);
   border-radius: 11px;
   overflow: hidden;
@@ -262,11 +278,13 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.199);
   translate: all 0.3s;
 }
-.meal:hover {
+.meal1:hover,
+.meal2:hover {
   transform: translate(0, -10px);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.281);
 }
-.meal img {
+.meal1 img,
+.meal2 img {
   width: 100%;
   margin-bottom: 2.4rem;
 }
@@ -359,9 +377,11 @@
   border-bottom: 1px solid transparent;
 }
 
-/*--------- section-meals */
+/*--------- section-testimonials */
 .section-testimonial {
   background-color: #fae5d3;
+  max-width: 240rem;
+  margin: 0 auto;
 }
 .testi-width {
   grid-column: 1/-1;
@@ -406,8 +426,6 @@
   justify-self: end;
 }
 .gallery-img-box {
-  max-width: 25rem;
-
   height: 100%;
   overflow: hidden;
 }
@@ -426,7 +444,7 @@
 
 /*--------- section-price */
 .section-price {
-  padding: 9.6rem 4.8rem;
+  padding: 9.6rem 0;
 }
 
 .price-box {
@@ -482,7 +500,7 @@
   margin-bottom: 4.8rem;
 }
 .price-description li {
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   display: flex;
   align-items: center;
 }
@@ -633,7 +651,7 @@
 }
 .form-box label {
   font-size: 2rem;
-
+  margin-bottom: 0.8rem;
   display: block;
   font-weight: 500;
   color: #2e1907;
@@ -751,5 +769,4 @@ footer {
 .footer-nav ul li a {
   text-decoration: none;
   color: #777;
-  marbo
 }

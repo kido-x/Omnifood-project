@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="general.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="query.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
       rel="stylesheet"
@@ -20,7 +21,7 @@
         src="img/omnifood-logo.png"
         alt="Omnifood company logo"
       />
-      <nav>
+      <nav class="navigation-box">
         <ul class="navigation-list-box">
           <li class="navigation-lists"><a href="#">home</a></li>
           <li class="navigation-lists"><a href="#">blog</a></li>
@@ -29,11 +30,15 @@
           <li class="navigation-lists"><a href="#">about us</a></li>
         </ul>
       </nav>
+      <button class="mobile-nav">
+        <ion-icon class="mobile-nav-icon" name="menu-outline"></ion-icon>
+        <ion-icon class="mobile-nav-icon" name="close-outline"></ion-icon>
+      </button>
     </header>
     <main>
       <section class="section-hero">
         <div class="hero grid grid-2cols">
-          <div class="hero-text">
+          <div class="hero-text-box">
             <h1 class="hero-heading">
               A healthy meal delivered to your door, every single day
             </h1>
@@ -152,7 +157,7 @@
             Omnifood AI chooses from 5,000+ recipes
           </h2>
           <div class="meal-box grid grid-3cols">
-            <div class="meal">
+            <div class="meal1">
               <img src="img/meals/meal-1.jpg" alt="omnifood meal" />
               <p class="meal-name">Japanese Gyoza</p>
               <span class="meal-type">Vegetarian</span>
@@ -177,7 +182,7 @@
                 </ul>
               </div>
             </div>
-            <div class="meal">
+            <div class="meal2">
               <img src="img/meals/meal-2.jpg" alt="omnifood meal" />
               <p class="meal-name">Avocado Salad</p>
               <span class="meal-type vegan">Vegan</span>
@@ -457,7 +462,7 @@
               </div>
               <form class="form-form grid grid-2cols form-fw" action="#">
                 <div>
-                  <label for="name">Name</label><br />
+                  <label for="name">Name</label>
                   <input
                     type="text"
                     name=""
@@ -467,7 +472,7 @@
                   />
                 </div>
                 <div>
-                  <label for="email">Email</label><br />
+                  <label for="email">Email</label>
                   <input
                     type="email"
                     name=""
@@ -477,7 +482,7 @@
                   />
                 </div>
                 <div>
-                  <label for="where">Where did you hear about us?</label><br />
+                  <label for="where">Where did you hear about us?</label>
                   <select name="where" id="where" required>
                     <option value="">-</option>
                     <option value="youtube">Youtube</option>
@@ -537,6 +542,7 @@
               <li><a href="#">Recipe directory</a></li>
             </ul>
           </div>
+
           <div class="footer-nav">
             <p class="footer-heading">Policy</p>
             <ul>
