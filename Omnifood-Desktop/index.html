@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta
+      name="description"
+      content="Omnifood is AI-powered food subscription that will make you eat healthy again, 365 days per year.It's tailored to your personal tastes and nutritional needs."
+    />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Omnifood Website</title>
+    <title>Omnifood&mdash;Never cook again!</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="general.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -13,6 +17,11 @@
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" href="img/favicon.png" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+
+    <script defer src="javascript.js"></script>
   </head>
   <body>
     <header class="navigation">
@@ -23,11 +32,13 @@
       />
       <nav class="navigation-box">
         <ul class="navigation-list-box">
-          <li class="navigation-lists"><a href="#">home</a></li>
-          <li class="navigation-lists"><a href="#">blog</a></li>
-          <li class="navigation-lists"><a href="#">apps</a></li>
-          <li class="navigation-lists"><a href="#">recipes</a></li>
-          <li class="navigation-lists"><a href="#">about us</a></li>
+          <li class="navigation-lists"><a href="#step">How it works</a></li>
+          <li class="navigation-lists"><a href="#meals">Meals</a></li>
+          <li class="navigation-lists">
+            <a href="#testimonial">Testimonials</a>
+          </li>
+          <li class="navigation-lists"><a href="#price">Pricing</a></li>
+          <li class="navigation-lists"><a href="#cta">Try for free</a></li>
         </ul>
       </nav>
       <button class="mobile-nav">
@@ -47,8 +58,8 @@
               eat healthy again. Tailored to your personal tastes and
               nutritional needs. We have delivered 250,000+ meals last year!
             </p>
-            <button class="btn"><a href="#">Start eat well!</a></button>
-            <button class="btn-second"><a href="#">learn it</a></button>
+            <button class="btn"><a href="#cta">Start eat well!</a></button>
+            <button class="btn-second"><a href="#step">learn it</a></button>
             <div class="customers">
               <img
                 src="img/customers/customer-1.jpg"
@@ -73,7 +84,16 @@
             </div>
           </div>
 
-          <img class="hero-img" src="img/hero.png" alt="omnifood-hero-images" />
+          <picture>
+            <source srcset="img/hero.webp" type="image/webp" />
+            <source srcset="img/hero.png" type="image/png" />
+
+            <img
+              class="hero-img"
+              src="img/hero.png"
+              alt="omnifood-hero-images"
+            />
+          </picture>
         </div>
       </section>
       <section class="section-featured-company">
@@ -94,7 +114,7 @@
           </div>
         </div>
       </section>
-      <section class="section-step">
+      <section id="step" class="section-step">
         <div class="container">
           <span class="sub-heading">how it works?</span>
           <h2 class="heading-secondary margin-bottom-b">
@@ -150,7 +170,7 @@
           </div>
         </div>
       </section>
-      <section class="section-meals">
+      <section id="meals" class="section-meals">
         <div class="container">
           <span class="sub-heading">Sample meals</span>
           <h2 class="heading-secondary">
@@ -251,7 +271,7 @@
           <a href="#" class="recipe-link">All recipes</a>
         </div>
       </section>
-      <section class="section-testimonial">
+      <section id="testimonial" class="section-testimonial">
         <div class="testimonial grid grid-2cols">
           <div class="testimonial-heading testi-width">
             <span class="sub-heading testi-width">Testimonial</span>
@@ -347,7 +367,7 @@
           </div>
         </div>
       </section>
-      <section class="section-price">
+      <section id="price" class="section-price">
         <div class="container">
           <span class="sub-heading">Price</span>
           <h2 class="heading-secondary">
@@ -448,7 +468,7 @@
           </div>
         </div>
       </section>
-      <section class="section-form">
+      <section id="cta" class="section-form">
         <div class="container">
           <div class="form-box grid grid-2cols">
             <div class="form">
@@ -509,7 +529,8 @@
             <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
           </div>
           <p class="copyright">
-            Copyright &copy; 2021 Omnifood.com. All Rights Reserved
+            Copyright &copy; <span class="year">2021</span> Omnifood.com. All
+            Rights Reserved
           </p>
         </div>
         <div class="company-address">
